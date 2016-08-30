@@ -1,0 +1,20 @@
+<div class="encounters-wrapper">
+	<div class="page-heading">
+	<h1>Recent Encounters</h1>
+	<span>See an Alien? Report it!</span>
+	</div>
+<div class="encounters-list">
+	<ul>
+		<li class="encounter-alien" *ngFor="let e of encounters">{{e.date}} - {{e.atype}} <br> {{e.action}} </li>
+
+	</ul>
+
+</div>
+
+	<footer class="encounters-footer">
+
+		<a class="report-encounter-button" [routerLink]="['/report']">Report Encounter</a>
+
+	</footer>
+
+</div>
